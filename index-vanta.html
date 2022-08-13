@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Leo Wang - Links</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./index.css" />
+		<script src="https://kit.fontawesome.com/4a90b7e6c5.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script> -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+				VANTA.FOG({
+					el: "#vanta",
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.00,
+					minWidth: 200.00,
+				})
+
+				setTimeout(() => {
+					const main = document.querySelector('main');
+					main.style.opacity = 1;
+					main.style.filter = 'blur(0px)';
+				}, 1000);
+			})
+		</script>
+	</head>
+	<body>
+		<div id="vanta"></div>
+		<main>
+			<header>
+				<img src="./images/leo.png" />
+				<h1>@LeoWang</h1>
+			</header>
+			<ul>
+				<li>
+					<a href="https://wangrunlin.com">
+						<i class="fa-solid fa-browser"></i>
+						WebSite
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/wangrunlin_">
+						<i class="fa-brands fa-twitter"></i>
+						Twitter
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/wangrunlin">
+						<i class="fa-brands fa-github"></i>
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a href="mailto:me@alin.run">
+						<i class="fa-solid fa-envelope"></i>
+						Email
+					</a>
+				</li>
+			</ul>
+		</main>
+	</body>
+</html>
